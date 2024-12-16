@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- başlık -->
+    <h1>CRUD UYGULMASI</h1>
+    <br />
+
+    <!-- form -->
+    <form>
+      <div>
+        <div class="title">Kullanici Adi</div>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <div class="title">E-posta Adresi</div>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <button onclick="addUser()" type="submit">Ekle</button>
+      <button onclick="temizle()" type="submit">Temizle</button>
+    </form>
+
+    <br /><br />
+    <!-- kullanıcı listesi -->
+
+    <div>
+      <ul id="userList"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
